@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Accident </title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+	
+</head>
+
+<body>
+    <div class="container-fluid ">
+      <div class="row justify-content-around align-items-center">
+        <div class="col text-right">
+          <button type="button" class="btn btn-success ">Check the Map</button>
+        </div>
+        <div class="col text-center">
+          <button type="button" class="btn btn-success">Report a Place</button>
+        </div>
+        <div class="col ">
+          <button type="button" class="btn btn-success ">Travel to Destination</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="row ">
+        <div class="col ">
+            <div id="mapid" ></div>
+        </div>
+        <div class="col p-5 m-3">
+            <form onSubmit="App.createTaskMan(); return false;">
+              <div class="form-group">
+                <label for="placeOfAccident">Place</label>
+                <input type="text" class="form-control" id="placeOfAccident"  placeholder="Enter Place">
+                <small id="" class="form-text text-muted">Place of damage</small>
+              </div>
+              <div class="form-group">
+                <label for="xCoords">Latitude</label>
+                <input type="text" class="form-control" id="xCoords" placeholder="Latitude">
+              </div>
+              <div class="form-group">
+                <label for="yCoords">Longitude</label>
+                <input type="text" class="form-control" id="yCoords" placeholder="Longitude">
+              </div>
+              <button type="submit" id="manSubmit" class="btn btn-primary">Submit</button>
+             
+            </form>
+        </div>
+        <div class="col ">
+            <form onSubmit="App.createTaskGeo(); return false;">
+              <button type="submit" id="manSubmit" class="btn btn-primary">Get Location</button>
+            </form>
+        </div>
+      </div>
+     
+     
+     
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/truffle-contract/dist/truffle-contract.js"></script>
+    <script src="app.js"></script>
+    <script>
+                
+        
+      
+    </script>
+</body>
+</html>
